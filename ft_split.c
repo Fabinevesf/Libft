@@ -3,16 +3,11 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: faneves <faneves@student.42.fr>            +#+  +:+       +#+        */
+/*   By: fabiananeves <fabiananeves@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/11 16:58:31 by faneves           #+#    #+#             */
-/*   Updated: 2023/10/11 16:59:09 by faneves          ###   ########.fr       */
+/*   Updated: 2023/10/12 15:13:38 by fabiananeve      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-char **ft_split(char const *s, char c)
-{
-	
-}

@@ -3,16 +3,11 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: faneves <faneves@student.42.fr>            +#+  +:+       +#+        */
+/*   By: fabiananeves <fabiananeves@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/11 17:00:06 by faneves           #+#    #+#             */
-/*   Updated: 2023/10/11 17:01:07 by faneves          ###   ########.fr       */
+/*   Updated: 2023/10/12 15:14:23 by fabiananeve      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-char *ft_strmapi(char const *s, char (*f)(unsigned int, char))
-{
-	
-}

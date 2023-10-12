@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: faneves <faneves@student.42.fr>            +#+  +:+       +#+        */
+/*   By: fabiananeves <fabiananeves@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/11 11:08:07 by faneves           #+#    #+#             */
-/*   Updated: 2023/10/11 16:48:59 by faneves          ###   ########.fr       */
+/*   Updated: 2023/10/12 15:16:53 by fabiananeve      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,5 +43,13 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize);
 char	*ft_strnstr(const char *big, const char *little, size_t len);
 char	*ft_strrchr(const char *str, int c);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
+void ft_putchar_fd(char c, int fd);
+char *ft_strjoin(char const *s1, char const *s2);
+void ft_putstr_fd(char *s, int fd);
+void ft_putnbr_fd(int n, int fd);
+void ft_putendl_fd(char *s, int fd);
+char *ft_itoa(int n);
+char *ft_strtrim(char const *s1, char const *set);
+
 
 #endif
