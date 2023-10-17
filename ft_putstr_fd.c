@@ -3,20 +3,20 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fabiananeves <fabiananeves@student.42.f    +#+  +:+       +#+        */
+/*   By: faneves <faneves@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/11 17:01:59 by faneves           #+#    #+#             */
-/*   Updated: 2023/10/12 13:31:17 by fabiananeve      ###   ########.fr       */
+/*   Updated: 2023/10/17 13:28:42 by faneves          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_putstr_fd(char *s, int fd)
+void	ft_putstr_fd(char *s, int fd)
 {
-		size_t	i;
+	size_t	i;
 
-		i = 0;
+	i = 0;
 	while (s[i])
 	{
 		ft_putchar_fd(s[i], fd);
@@ -24,10 +24,10 @@ void ft_putstr_fd(char *s, int fd)
 	}
 }
 
-int	main(void)
+/*int	main(void)
 {
 	char*	c;
 
 	c = "Fabiana linda";
 	ft_putstr_fd(c, 1);
-}
+}*/

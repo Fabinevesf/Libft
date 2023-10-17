@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fabiananeves <fabiananeves@student.42.f    +#+  +:+       +#+        */
+/*   By: faneves <faneves@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/11 15:29:00 by faneves           #+#    #+#             */
-/*   Updated: 2023/10/12 14:18:16 by fabiananeve      ###   ########.fr       */
+/*   Updated: 2023/10/17 15:40:04 by faneves          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,9 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	size_t	i;
 
 	if (start >= ft_strlen(s))
-        	return (NULL);
+		return (ft_strdup(""));
+	if (len > ft_strlen(s) - start)
+		len = ft_strlen(s) - start;
 	newstr = (char *)malloc(sizeof(char) * (len + 1));
 	if (!newstr)
 		return (NULL);
@@ -33,6 +35,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	newstr[i] = '\0';
 	return (newstr);
 }
+
 /*int	main(void)
 {
 	char const	*str = "Fabiana";
