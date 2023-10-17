@@ -1,5 +1,6 @@
 #make file
 CC = cc
+RM = rm -rf
 CFLAGS = -Wall -Wextra -Werror
 NAME = libft.a
 
@@ -12,15 +13,23 @@ SRCS =  ft_atoi.c ft_bzero.c ft_calloc.c ft_isalnum.c ft_isalpha.c\
 
 OBJS = $(SRCS:.c=.o)
 
+BONUS = ft_lstadd_front.c ft_lstlast.c ft_lstnew.c ft_lstsize.c ft_lstadd_back.c \
+		ft_lstdelone.c ft_lstclear.c ft_lstiter.c ft_lstmap.c
+
+BONUS_OBJS = $(BONUS:.c=.o)
+
 all: $(NAME)
 
 $(NAME): $(OBJS)
 	ar rcs $(NAME) $(OBJS)
 
+bonus: $(OBJS) $(BONUS_OBJS)
+							ar rcs $(NAME) $(OBJS) $(BONUS_OBJS)
+
 clean:
-	rm -rf $(OBJS)
+	$(RM) $(BONUS_OBJS) $(OBJS)
 
 fclean: clean
-	rm -rf $(NAME)
+	$(RM) $(NAME)
 
 re: fclean all
